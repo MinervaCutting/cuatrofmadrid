@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+	<style>
+		:root {
+  /* Set fade in duration */
+  --fade-time: 0.5s;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-weight: 360;
+  line-height: 130%;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border: #fff solid 1px;
+ 
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.imgs img {
+  cursor: pointer;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+  <div class="activities" style="margin: auto; padding: 0px;">   
+    <h3>Serafina Cocina Bar </h3>                                              <!--insertar titulo-->
+    <p> Serafina Cocina Bar is a new multifunctional space in the center of Madrid opened in December 2014. The name Serafina is not just a coincidence, but on the contrary, is a tribute to the owners' mother, whose life has been closely linked to the kitchen and thanks to her they learned what it means home cooking made with love.</p>
+
+    <p> With a schedule serving from 8.30 to 2.00 in which people can  breakfast, lunch, dinner or simply enjoy a beer after work or an evening with the best music. Serafina Cocina Bar is a large space, divided into two floors, counting with different environments and with a concept that is totally different to what it is offered by such a unique area like the center. </p> 
+
+    <p> A home cooking where you can enjoy different tapas and dishes where raw materials and careful preparation are the subject, thanks to our kitchen team that brings over 50 years of experience in classical and avant-garde cuisine. Friendly and close treatment, and an impeccable décor with a mix of industrial, modern, vintage style and family memories make Serafina Cocina Bar an ideal place to enjoy our cuisine "non stop" from 12.30 to 00.30 seven days a week.</p>
+
+
+                     <!--insertar el texto-->
+    <hr>
+  </div>
+	<div class="container">
+    <div class="main-img">
+      <img src="http://www.serafinacocinabar.com/recursos/fotos/b7914add63d72171db04626fbe949853.jpg" id="current">
+    </div>
+
+    <div class="imgs">                                          <!--insertar las fotos-->
+      <img src="http://www.serafinacocinabar.com/recursos/fotos/b7914add63d72171db04626fbe949853.jpg">
+      <img src="http://www.serafinacocinabar.com/recursos/fotos/197cd37ca3f9d8215effc09e2657cb47.jpg">
+      <img src="http://www.serafinacocinabar.com/recursos/fotos/887465ac5f109f14b20c1771dddea1a6.jpg">
+      <img src="http://www.serafinacocinabar.com/recursos/fotos/d16b8c637ff697ebf6cad7bdab9e83ba.jpg">
+    </div>
+  </div>
+  <hr>
+  
+  <section class="container">
+
+<div class ="one" style="float: left;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6)">
+<p><i class="fa fa-map-o" style="font-size:20px;color:orange;"></i>   <!--insertar la info relevante a los iconos-->
+<span style="margin: 0 15px; font-size:14px"><b>Location:</b> City Centre</p></span>
+<p><i class="fa fa-cutlery" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 20px; font-size:14px"><b>Dining room capacities:</b> 40, 60 pax</p></span>
+<p><i class="fa fa-eur" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 23px; font-size:14px"><b>Price Level:</b> medium</p></span>
+</div>
+
+<div class ="two" style="float: right;
+    padding: 10px; background-color: rgba(238, 238, 238, 0.6); ">
+
+<p><i class="fa fa-handshake-o" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 3px; font-size:14px"><b>Style:</b> Traditional cuisine</p></span>
+<p><i class="fa fa-apple" style="font-size:20px;color:orange;"></i> 
+<span style="margin: 0 10px"><b>Vegetarian Options/Special diets:</b> Available</p></span>
+<p><i class="fa fa-wheelchair" style="font-size:22px;color:orange;"></i>   
+<span style="margin: 0 90px, font-size:14px"><b>Handicapped facilities:</b> Yes</p></span>
+</div>
+</section>
+</div> 
+	<script>
+		const current = document.querySelector('#current');
+const imgs = document.querySelector('.imgs');
+const img = document.querySelectorAll('.imgs img');
+const opacity = 0.6;
+
+// Set first img opacity
+img[0].style.opacity = opacity;
+
+imgs.addEventListener('click', imgClick);
+
+function imgClick(e) {
+  // Reset the opacity
+  img.forEach(img => (img.style.opacity = 1));
+
+  // Change current image to src of clicked image
+  current.src = e.target.src;
+
+  // Add fade in class
+  current.classList.add('fade-in');
+
+  // Remove fade-in class after .5 seconds
+  setTimeout(() => current.classList.remove('fade-in'), 500);
+
+  // Change the opacity to opacity var
+  e.target.style.opacity = opacity;
+}
+
+	</script>
+</body>
+</html>

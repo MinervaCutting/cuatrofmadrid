@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Lizbeth Angulo" />
+
+
+<title>CUATROF - MADRID</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="FORMATO.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CUTT/events</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Quotation</a>
+</li>
+<li>
+  <a href="about.html">Credentials</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">CUATROF - MADRID</h1>
+<h4 class="author">Lizbeth Angulo</h4>
+<h4 class="date">6 Junio , 2020</h4>
+
+</div>
+
+
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" vspace="50" align="right"></A>') 
+    }); 
+</script>
+<style>
+
+.precio{
+background-color:#828282;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 5px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+<div id="introduccón" class="section level1">
+<h1><strong>Introduccón</strong></h1>
+<p>Siguiendo su petición, a continuación le presentamos:</p>
+<ul>
+<li><p>Restaurantes de comida tradicional situados en el centro de la ciudad, en los que podrá disfrutar de comida de alta calidad cocinada “según las recetas de nuestros abuelos”</p></li>
+<li><p>Restaurantes vanguardistas, jóvenes…con una atmósfera especial, pero sin olvidar nunca la buena comida.</p></li>
+<li><p>Una opción de cena más espectáculo flamenco.</p></li>
+<li><p>Actividades de medio dia que se realizan en la ciudad de Madrid y nos explican parte de su “alma”</p></li>
+<li><p>Excursion fuera de Madrid incluyendo almuerzo, en las que podrán disfrutar de la historia y la gastronomía de la zona.</p></li>
+<li><p>Precio de traslados en bus</p></li>
+</ul>
+<p><br> <br></p>
+<div id="restaurantes-tradicionales" class="section level2 tabset tabset-fade">
+<h2><strong>Restaurantes Tradicionales</strong></h2>
+<div id="casa-gallega" class="section level3">
+<h3>Casa Gallega</h3>
+<iframe src="CasaGallega/CasaGallegaCast.html" frameborder="0" width="100%" height="1050" scrolling="no">
+</iframe>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 62,50€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="opulpo" class="section level3">
+<h3>OPulpo</h3>
+<iframe src="Opulpo/opulpocast.html" frameborder="0" width="100%" height="1050" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="casa-alberto" class="section level3">
+<h3>Casa Alberto</h3>
+<iframe src="CasaAlberto/CasaAlbertoCast.html" frameborder="0" width="100%" height="1600" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 2 pax, agua y café) desde: 44€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="meson-txistu" class="section level3">
+<h3>Meson Txistu</h3>
+<p>El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en un solo salón.</p>
+<iframe src="Meson Txistu/MesonTxistuCast.html" frameborder="0" width="100%" height="1050" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrantes a compartir, plato principal a elegir entre carne y pescado, postre casero, incluyendo bebida (1 botella de vino cada 2 pax, agua y café) desde: 75,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="la-barraca" class="section level3">
+<h3>La Barraca</h3>
+<iframe src="LaBarraca/LaBarracaCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto de entrante, plato principal (paella), postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 52,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+<div id="restaurantes-especiales" class="section level2 tabset tabset-fade">
+<h2><strong>Restaurantes Especiales</strong></h2>
+<div id="ana-la-santa" class="section level3">
+<h3>Ana La Santa</h3>
+<iframe src="AnaLaSanta/AnaLaSantaCast.html" frameborder="0" width="100%" height="1030" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 67,50€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="habanera" class="section level3">
+<h3>Habanera</h3>
+<iframe src="Habanera/HabaneraCast.html" frameborder="0" width="100%" height="1000" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto por entrantes a compartir, principal a elegir entre carne y pescado, postre, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 69€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="mucca-de-prado" class="section level3">
+<h3>Mucca de Prado</h3>
+<iframe src="LaMuccadePrado/LaMuccadePradoCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto platos servidos al centro para compartir, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 44€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="el-imparcial" class="section level3">
+<h3>El Imparcial</h3>
+<iframe src="Imparcial/ImparcialCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li>Menu básico compuesto entrantes a compartir, principal a elegir entre carne y pescado, incluyendo bebida (1 botella de vino cada 3 pax, agua y café) desde: 48€ IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+</div>
+<div id="cena-y-flamenco" class="section level2">
+<h2><strong>Cena y Flamenco</strong></h2>
+<div id="tablao-villa-rosa" class="section level3">
+<h3>Tablao Villa Rosa</h3>
+<p>Situado en la céntrica Plaza de Santa Ana encontramos el Tablao Villa Rosa, el más antiguo de Madrid. Fue inagurado en 1911 y tras varias transformaciones, en 1919 lograron desarrollar un concepto nuevo para el momento: restaurante con espectáculo en Madrid con alma flamenca.</p>
+<p><img src = "https://www.ticketsnet.es/imagesRecintos/villarosa1.jpg"></p>
+<p>En Villa Rosa podemos encontrar una variada propuesta gastronómica ofreciendo los platos más representativos de la cocina española y especialmente la andaluza.</p>
+<p>La Estructura del teatro flamenco se articula bajo un entramado de columnas inspidados en la Alhambra de Granada. El ambiente se envuelve bajo las escenas taurinas y flamencas de azulejos que se conservan desde la inauguración del tablao.</p>
+<p><img src = "https://www.ticketsnet.es/imagesRecintos/villarosa2.jpg"></p>
+<p><img src = "http://www.buscorestaurantes.com/files/images/Tablao-Villa-Rosa-125808.jpg"></p>
+<p><br></p>
+<div class="precio">
+
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Menu básico de tres platos, incluyendo 1 bebida, desde(incluyendo el espectáculo): 66,50€ IVA inc.</p></li>
+<li><p>Barra libre de cerveza, vino y sangría 2 horas (durante la cena): 16,50€ IVA inc</p></li>
+<li><p>Café o te: 2,5€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+</div>
+</div>
+<div id="actividades-en-madrid" class="section level2">
+<h2><strong>Actividades en Madrid</strong></h2>
+<div id="santiago-bernabeu" class="section level3">
+<h3>Santiago Bernabeu</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-santiago-bernabeu/index.html" frameborder="0" width="100%" height="900">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Guía oficial para tour guiado por la ciudad (4h): 260€ IVA inc</p></li>
+<li><p>Entrada al Estadio incluyendo visita a museo y sala audiovisual: 38,50€ IVA inc por persona</p></li>
+<li><p>Bus de 16 plazas a disposición 4h para la visita: 250€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="las-ventas" class="section level3">
+<h3>Las Ventas</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/las-ventas/index.html" frameborder="0" width="100%" height="800">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Visita guiada a la plaza de toros (1h30minutos): 330€ IVA inc todo el grupo hasta 11 personas</p></li>
+<li><p>Se puede añadir al tour la opción de disfrutar de los juegos virtuales (grupos hasta 10 personas - 40 minutos):150€ IVA inc</p></li>
+<li><p>Bus de 16 plazas a disposición 4h para la visita: 250€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="tour-de-tapas" class="section level3">
+<h3>Tour de Tapas</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-de-tapas/index.html" frameborder="0" width="100%" height="1000">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Guía oficial para el tapas tour (maximo 4h): 260€ IVA inc</p></li>
+<li><p>3 Paradas de Tapas incluyendo 6 tapas y 3 bebidas en total: 45€ IVA inc por persona <em>(se puede ampliar el número de tapas bajo petición)</em></p></li>
+<li><p>Bus de 16 plazas a disposición 4h para la visita: 250€ IVA inc</p>
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br></p>
+<p><em>El tour se realizará caminando por el centro pero necesitarán el bus para ir/volver desde el hotel hasta el punto de inicio</em></p>
+<p><br> <br></p>
+</div>
+<div id="palacio-real-madrid" class="section level3">
+<h3>Palacio Real Madrid</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/visita-palacio-real-de-madrid/index.html" frameborder="0" width="100%" height="800">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Bus de 16 plazas a disposición 4h para la visita: 250€ IVA inc</p></li>
+<li><p>Guía oficial para tour por Madrid (4h): 260€ IVA inc</p></li>
+<li>Entrada al Palacio Real incluyendo auriculares: 15€ IVA inc por persona.
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="madrid-secreta" class="section level3">
+<h3>Madrid secreta</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/teleferico-y-estacion-de-4-caminos/index.html" frameborder="0" width="100%" height="800">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Bus de 16 plazas a disposición 4h para la visita: 250€ IVA inc</p></li>
+<li><p>Guía oficial para tour por Madrid (4h): 260€ IVA inc</p></li>
+<li>Tickets para el teleferico: 10€ por persona IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="tour-en-biplaza" class="section level3">
+<h3>Tour en biplaza</h3>
+<p><img src = "gocar.jpg" width="100%"></p>
+<p>Tour de 3 horas comenzando y terminando en el Templo de Debod, los invitados conducen sus propios biplazas guiados por un GPS en el que está programada la ruta. El mismo GPS es el que dará las explicaciones sobre los lugares destacados tal y como El Palacio Real, la PlazaMayor, La Gran via, etc.</p>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Bus de 16 plazas a disposición 4h: 250€ IVA inc</p></li>
+<li>3 horas de actividad, incluyendo 1 coche por cada 2 personas, seguro de responsabilidad civil y de accidentes, Audioguia/GPS en varios idiomas: 85€ por persona IVA inc
+</ul>
+</p>
+</div></li>
+</ul>
+<p><em>Seguro para cubrir daños por colisión con franquicia de 300€ + IVA por coche</em></p>
+<p><em>Se requiere un depósito de 1.200€ como garantía que será inmediatamente abonado al finalizar el evento</em></p>
+<p><br></p>
+<p><img src = "https://cdn.civitatis.com/espana/madrid/galeria/gocar-museo-prado.jpg" width="100%"></p>
+<p><br> <br></p>
+</div>
+</div>
+<div id="excursión-día-completo" class="section level2">
+<h2><strong>Excursión día completo</strong></h2>
+<div id="toledo" class="section level3">
+<h3>Toledo</h3>
+<iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/toledo-full-day-tour/index.html" frameborder="0" width="100%" height="800">
+</iframe>
+<div class="precio">
+<p>
+PRECIOS:
+<ul>
+<ul>
+<li><p>Bus de 16 plazas a disposición 8h para la visita a Toledo: 470€ IVA inc</p></li>
+<li><p>Guía oficial para hacer la excursión saliendo de Madrid con el grupo y haciendo tour por Toledo a pie: 380€ IVA inc</p></li>
+<li><p>Almuerzo en Alfileritos 24 - menu compuesto de 3 platos incluyendo bebida y café, desde: 46,50€ por persona IVA inc</p></li>
+<li>Entrada a la Catedral de Toledo 15€ IVA inc por persona.
+</ul>
+</p>
+</div></li>
+</ul>
+<p><br></p>
+<p><em>En sábados o festivos, el precio del guía incrementará un 20%</em></p>
+<p><br> <br></p>
+</div>
+</div>
+<div id="condiciones" class="section level2">
+<h2><strong>Condiciones</strong></h2>
+<ul>
+<li><p>Precios netos para CuatroF</p></li>
+<li><p>Los honorarios de Cutting Edge Events está incluido en los precios</p></li>
+<li><p>Todos los precios incluyen IVA</p></li>
+<li><p>No se ha realizado ninguna reserva. Una vez confirmado se comprobará la disponibilidad.</p></li>
+</ul>
+<p><br> <br></p>
+</div>
+<div id="sorprendan-a-sus-clientes" class="section level2">
+<h2><strong>Sorprendan a sus clientes!!</strong></h2>
+<div class="client_offer">
+
+<p>
+<p>¿Les ha gustado nuestra presentación? La meta principal de <em><strong>Cutting Edge Events</strong></em> es ayudarles a <strong>ganar</strong> este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br></p>
+<p>
+Pero…¿porqué no utilizar nuestra tecnología y presentar esta propuesta a su cliente en nuestro formato? Ahora les ofrecemos, como un servicio <strong>totalmente gratuito</strong>, la posibilidad de poder sorprender a sus clientes con su novedosa propuesta.
+</p>
+<p>
+¿Cómo lo hacemos?:
+<ul>
+<ul>
+<li><p>Seguimos sus instrucciones para añadir cualquier cosa que quiran que esté incluida en su presentación y borrar cualquier otra información que consideren irrelevante.</p></li>
+<li><p>Incluimos el logo e información de su empresa y eliminamos todos nuestros datos.</p></li>
+<li><p>Podemos incluso cambiar algunos de los colores para que se asemeje más a su imagen corporativa.</p></li>
+<li>Una vez finalizada le enviaremos un nuevo link que no tendrá ninguna referencia a Cutting Edge Events para que puedan enviarlo a sus clientes como una presentación propia.
+</ul>
+</p>
+</div></li>
+</ul>
+<style>
+
+.client_offer{
+background-color: #ee7600;
+color: white;
+padding: 10px;
+border: 1px solid black;
+margin-left: 25px;
+border-radius: 5px;
+font-style: italic;
+}
+</style>
+<hr />
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
