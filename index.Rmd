@@ -34,6 +34,29 @@ font-style: italic;
 
 
 
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #EA5933;
+}
+</style>
+
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #EA5933;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: #EA5933;
+}
+
+</style>
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 ```
@@ -48,7 +71,7 @@ library(timevis)
 ```
 
 
-# **Introduccón**
+# Introduccón
 
 Siguiendo su petición, a continuación le presentamos:
 
@@ -61,16 +84,21 @@ Siguiendo su petición, a continuación le presentamos:
 * Actividades de medio dia que se realizan en la ciudad de Madrid y nos explican parte de su "alma"
   
 * Excursion fuera de Madrid incluyendo almuerzo, en las que podrán disfrutar de la historia y la gastronomía de la zona.
-  
-* Precio de traslados en bus
+
 
 <br>
 <br>
 
+# Mapa
 
-## **Restaurantes Tradicionales** {.tabset .tabset-fade}
+En este mapa se muestra la localización de los restaurantes que recomendamos.
 
-### Casa Gallega
+<iframe src="https://www.google.com/maps/d/embed?mid=1MehcDD59VY7q1IDua2r0fcbKbDE2CJ_c&hl=es" width="100%" height="550"></iframe>
+
+
+# Restaurantes Tradicionales 
+
+## Casa Gallega
 
 
 <iframe src="CasaGallega/CasaGallegaCast.html"  frameborder="0" width="100%" height="1050" scrolling="no"></iframe>
@@ -92,7 +120,7 @@ Siguiendo su petición, a continuación le presentamos:
 <br>
 
 
-### OPulpo
+## OPulpo
 
 
 <iframe src="Opulpo/opulpocast.html"  frameborder="0" width="100%" height="1050" scrolling="no"></iframe>
@@ -111,7 +139,7 @@ Siguiendo su petición, a continuación le presentamos:
 <br>
 <br>
 
-### Casa Alberto
+## Casa Alberto
 
 
 <iframe src="CasaAlberto/CasaAlbertoCast.html"  frameborder="0" width="100%" height="1600" scrolling="no"></iframe>
@@ -130,7 +158,7 @@ Siguiendo su petición, a continuación le presentamos:
 <br>
 
 
-### Meson Txistu
+## Meson Txistu
 
 El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en un solo salón.
 
@@ -147,7 +175,7 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 <br>
 <br>
 
-### La Barraca
+## La Barraca
 
 <iframe src="LaBarraca/LaBarracaCast.html"  frameborder="0" width="100%" height="1100" scrolling="no"></iframe>
 
@@ -164,9 +192,9 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 
 
 
-## **Restaurantes Especiales** {.tabset .tabset-fade}
+# Restaurantes Especiales
 
-### Ana La Santa
+## Ana La Santa
 
 <iframe src="AnaLaSanta/AnaLaSantaCast.html"  frameborder="0" width="100%" height="1030" scrolling="no"></iframe>
 
@@ -182,7 +210,7 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 <br>
 
 
-### Habanera
+## Habanera
 
 <iframe src="Habanera/HabaneraCast.html"  frameborder="0" width="100%" height="1000" scrolling="no"></iframe>
 
@@ -198,7 +226,7 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 <br>
 
 
-### Mucca de Prado
+## Mucca de Prado
 
 
 <iframe src="LaMuccadePrado/LaMuccadePradoCast.html"  frameborder="0" width="100%" height="1100" scrolling="no"></iframe>
@@ -215,7 +243,7 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 <br>
 
 
-### El Imparcial
+## El Imparcial
 
 
 <iframe src="Imparcial/ImparcialCast.html"  frameborder="0" width="100%" height="1100" scrolling="no"></iframe>
@@ -231,9 +259,9 @@ El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en
 <br>
 <br>
 
-## **Cena y Flamenco** 
+# Cena y Flamenco 
 
-### Tablao Villa Rosa
+## Tablao Villa Rosa
 
 Situado en la céntrica Plaza de Santa Ana encontramos el Tablao Villa Rosa, el más antiguo de Madrid.
 Fue inagurado en 1911 y tras varias transformaciones, en 1919 lograron desarrollar un concepto nuevo para el momento: restaurante con espectáculo en Madrid con alma flamenca.
@@ -269,9 +297,9 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 
 
 
-## **Actividades en Madrid** 
+# Actividades en Madrid 
 
-### Santiago Bernabeu
+## Santiago Bernabeu
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-santiago-bernabeu/index.html" frameborder="0" width="100%" height="900"></iframe>
 
@@ -291,7 +319,7 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 <br>
 <br>
 
-### Las Ventas
+## Las Ventas
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/las-ventas/index.html" frameborder="0" width="100%" height="800"></iframe>
 
@@ -313,7 +341,7 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 
 
 
-### Tour de Tapas
+## Tour de Tapas
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-de-tapas/index.html" frameborder="0" width="100%" height="1000"></iframe>
 
@@ -340,7 +368,7 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 <br>
 
 
-### Palacio Real Madrid
+## Palacio Real Madrid
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/visita-palacio-real-de-madrid/index.html" frameborder="0" width="100%" height="800"></iframe>
 
@@ -359,7 +387,7 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 <br>
 <br>
 
-### Madrid secreta
+## Madrid secreta
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/teleferico-y-estacion-de-4-caminos/index.html" frameborder="0" width="100%" height="800"></iframe>
 
@@ -378,7 +406,7 @@ La Estructura del teatro flamenco se articula bajo un entramado de columnas insp
 <br>
 <br>
 
-### Tour en biplaza
+## Tour en biplaza
 
 <img src = "gocar.jpg" width="100%">
 
@@ -405,9 +433,9 @@ Tour de 3 horas comenzando y terminando en el Templo de  Debod, los invitados co
 <br>
 <br>
 
-## **Excursión día completo** 
+# Excursión día completo
 
-### Toledo 
+## Toledo 
 
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/toledo-full-day-tour/index.html" frameborder="0" width="100%" height="800"></iframe>
 
@@ -435,7 +463,7 @@ Tour de 3 horas comenzando y terminando en el Templo de  Debod, los invitados co
 
 
 
-## **Condiciones**
+# Condiciones
 
   * Precios netos para CuatroF
   
@@ -448,11 +476,11 @@ Tour de 3 horas comenzando y terminando en el Templo de  Debod, los invitados co
 <br>
 <br>
 
-## **Sorprendan a sus clientes!!**
+## Sorprendan a sus clientes!!
 
 <div class="client_offer">
 
-<p>¿Les ha gustado nuestra presentación? La meta principal de _**Cutting Edge Events**_ es ayudarles a **ganar** este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br>
+<p>¿Les ha gustado nuestra presentación? La meta principal de _**CUTT/events**_ es ayudarles a **ganar** este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br>
 
 <p>Pero...¿porqué no utilizar nuestra tecnología y presentar esta propuesta a su cliente en nuestro formato? Ahora les ofrecemos, como un servicio **totalmente gratuito**, la posibilidad de poder sorprender a sus clientes con su novedosa propuesta. </p>
 

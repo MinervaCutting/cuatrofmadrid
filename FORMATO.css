@@ -1,19 +1,12 @@
 
-#TOC { 
-      color: #ee7600;
-      border-color: blue;
-      font-size: 14px;
-      font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-      font-weight: 400;
-      margin: 0px;
-}
+ 
 
 body {
-      font-size: 14px;
-      color: black;
-      font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-      font-weight: 400;
+      font-size: 21px;
+      color: #22281B;
       line-height: 130%;
+      font-weight: 400;
+      font-family: 'Barlow Condensed';
   }
   
 td { 
@@ -21,40 +14,41 @@ td {
 }
 
 h1 {
-  font-size: 50px;
-  color: #ee7600;
-  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-size: 40px;
+  color: #EA5933;
+  font-weight: bold;
+  font-family: 'Barlow Condensed';
 }
 
 h2 { 
     font-size: 28px;
-    color:black;
-    font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    color: #22281B;
+    font-weight: bold;
 }
 
 h3 { 
-  font-size: 20px;
-  color: #ee7600;
-  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
+  font-size: 21px;
+  color: #22281B;
   font-weight: 400;
+  font-family: 'Barlow Condensed';
 }
 
 
 h4 { 
-  font-size: 18px;
-  color: #ee7600;
-  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-size: 21px;
+  color: #22281B;
+  font-family: 'Barlow Condensed';
 }
 
 
 h5 { 
-  font-size: 16px;
-  color: #ee7600;
-  font-family: "Helvetica Neue", Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-size: 21px;
+  color: #EA5933;
+  font-family: 'Barlow Condensed';
+
 }
 
+
+
+   
 

@@ -386,8 +386,27 @@ border-radius: 5px;
 font-style: italic;
 }
 </style>
+<style>
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #EA5933;
+}
+</style>
+<style>
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #EA5933;
+    font-weight: bold;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: white;
+    background-color: #EA5933;
+}
+
+</style>
 <div id="introduccón" class="section level1">
-<h1><strong>Introduccón</strong></h1>
+<h1>Introduccón</h1>
 <p>Siguiendo su petición, a continuación le presentamos:</p>
 <ul>
 <li><p>Restaurantes de comida tradicional situados en el centro de la ciudad, en los que podrá disfrutar de comida de alta calidad cocinada “según las recetas de nuestros abuelos”</p></li>
@@ -395,13 +414,19 @@ font-style: italic;
 <li><p>Una opción de cena más espectáculo flamenco.</p></li>
 <li><p>Actividades de medio dia que se realizan en la ciudad de Madrid y nos explican parte de su “alma”</p></li>
 <li><p>Excursion fuera de Madrid incluyendo almuerzo, en las que podrán disfrutar de la historia y la gastronomía de la zona.</p></li>
-<li><p>Precio de traslados en bus</p></li>
 </ul>
 <p><br> <br></p>
-<div id="restaurantes-tradicionales" class="section level2 tabset tabset-fade">
-<h2><strong>Restaurantes Tradicionales</strong></h2>
-<div id="casa-gallega" class="section level3">
-<h3>Casa Gallega</h3>
+</div>
+<div id="mapa" class="section level1">
+<h1>Mapa</h1>
+<p>En este mapa se muestra la localización de los restaurantes que recomendamos.</p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1MehcDD59VY7q1IDua2r0fcbKbDE2CJ_c&amp;hl=es" width="100%" height="550">
+</iframe>
+</div>
+<div id="restaurantes-tradicionales" class="section level1">
+<h1>Restaurantes Tradicionales</h1>
+<div id="casa-gallega" class="section level2">
+<h2>Casa Gallega</h2>
 <iframe src="CasaGallega/CasaGallegaCast.html" frameborder="0" width="100%" height="1050" scrolling="no">
 </iframe>
 <div class="precio">
@@ -417,8 +442,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="opulpo" class="section level3">
-<h3>OPulpo</h3>
+<div id="opulpo" class="section level2">
+<h2>OPulpo</h2>
 <iframe src="Opulpo/opulpocast.html" frameborder="0" width="100%" height="1050" scrolling="no">
 </iframe>
 <div class="precio">
@@ -433,8 +458,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="casa-alberto" class="section level3">
-<h3>Casa Alberto</h3>
+<div id="casa-alberto" class="section level2">
+<h2>Casa Alberto</h2>
 <iframe src="CasaAlberto/CasaAlbertoCast.html" frameborder="0" width="100%" height="1600" scrolling="no">
 </iframe>
 <div class="precio">
@@ -449,8 +474,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="meson-txistu" class="section level3">
-<h3>Meson Txistu</h3>
+<div id="meson-txistu" class="section level2">
+<h2>Meson Txistu</h2>
 <p>El mesón tiene salones privados de difererentes tamaños, desde 46 a 150 pax en un solo salón.</p>
 <iframe src="Meson Txistu/MesonTxistuCast.html" frameborder="0" width="100%" height="1050" scrolling="no">
 </iframe>
@@ -466,8 +491,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="la-barraca" class="section level3">
-<h3>La Barraca</h3>
+<div id="la-barraca" class="section level2">
+<h2>La Barraca</h2>
 <iframe src="LaBarraca/LaBarracaCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
 </iframe>
 <div class="precio">
@@ -483,10 +508,10 @@ PRECIOS:
 <p><br> <br></p>
 </div>
 </div>
-<div id="restaurantes-especiales" class="section level2 tabset tabset-fade">
-<h2><strong>Restaurantes Especiales</strong></h2>
-<div id="ana-la-santa" class="section level3">
-<h3>Ana La Santa</h3>
+<div id="restaurantes-especiales" class="section level1">
+<h1>Restaurantes Especiales</h1>
+<div id="ana-la-santa" class="section level2">
+<h2>Ana La Santa</h2>
 <iframe src="AnaLaSanta/AnaLaSantaCast.html" frameborder="0" width="100%" height="1030" scrolling="no">
 </iframe>
 <div class="precio">
@@ -501,8 +526,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="habanera" class="section level3">
-<h3>Habanera</h3>
+<div id="habanera" class="section level2">
+<h2>Habanera</h2>
 <iframe src="Habanera/HabaneraCast.html" frameborder="0" width="100%" height="1000" scrolling="no">
 </iframe>
 <div class="precio">
@@ -517,8 +542,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="mucca-de-prado" class="section level3">
-<h3>Mucca de Prado</h3>
+<div id="mucca-de-prado" class="section level2">
+<h2>Mucca de Prado</h2>
 <iframe src="LaMuccadePrado/LaMuccadePradoCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
 </iframe>
 <div class="precio">
@@ -533,8 +558,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="el-imparcial" class="section level3">
-<h3>El Imparcial</h3>
+<div id="el-imparcial" class="section level2">
+<h2>El Imparcial</h2>
 <iframe src="Imparcial/ImparcialCast.html" frameborder="0" width="100%" height="1100" scrolling="no">
 </iframe>
 <div class="precio">
@@ -550,10 +575,10 @@ PRECIOS:
 <p><br> <br></p>
 </div>
 </div>
-<div id="cena-y-flamenco" class="section level2">
-<h2><strong>Cena y Flamenco</strong></h2>
-<div id="tablao-villa-rosa" class="section level3">
-<h3>Tablao Villa Rosa</h3>
+<div id="cena-y-flamenco" class="section level1">
+<h1>Cena y Flamenco</h1>
+<div id="tablao-villa-rosa" class="section level2">
+<h2>Tablao Villa Rosa</h2>
 <p>Situado en la céntrica Plaza de Santa Ana encontramos el Tablao Villa Rosa, el más antiguo de Madrid. Fue inagurado en 1911 y tras varias transformaciones, en 1919 lograron desarrollar un concepto nuevo para el momento: restaurante con espectáculo en Madrid con alma flamenca.</p>
 <p><img src = "https://www.ticketsnet.es/imagesRecintos/villarosa1.jpg"></p>
 <p>En Villa Rosa podemos encontrar una variada propuesta gastronómica ofreciendo los platos más representativos de la cocina española y especialmente la andaluza.</p>
@@ -576,10 +601,10 @@ PRECIOS:
 </ul>
 </div>
 </div>
-<div id="actividades-en-madrid" class="section level2">
-<h2><strong>Actividades en Madrid</strong></h2>
-<div id="santiago-bernabeu" class="section level3">
-<h3>Santiago Bernabeu</h3>
+<div id="actividades-en-madrid" class="section level1">
+<h1>Actividades en Madrid</h1>
+<div id="santiago-bernabeu" class="section level2">
+<h2>Santiago Bernabeu</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-santiago-bernabeu/index.html" frameborder="0" width="100%" height="900">
 </iframe>
 <div class="precio">
@@ -596,8 +621,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="las-ventas" class="section level3">
-<h3>Las Ventas</h3>
+<div id="las-ventas" class="section level2">
+<h2>Las Ventas</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/las-ventas/index.html" frameborder="0" width="100%" height="800">
 </iframe>
 <div class="precio">
@@ -614,8 +639,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="tour-de-tapas" class="section level3">
-<h3>Tour de Tapas</h3>
+<div id="tour-de-tapas" class="section level2">
+<h2>Tour de Tapas</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/tour-de-tapas/index.html" frameborder="0" width="100%" height="1000">
 </iframe>
 <div class="precio">
@@ -634,8 +659,8 @@ PRECIOS:
 <p><em>El tour se realizará caminando por el centro pero necesitarán el bus para ir/volver desde el hotel hasta el punto de inicio</em></p>
 <p><br> <br></p>
 </div>
-<div id="palacio-real-madrid" class="section level3">
-<h3>Palacio Real Madrid</h3>
+<div id="palacio-real-madrid" class="section level2">
+<h2>Palacio Real Madrid</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/visita-palacio-real-de-madrid/index.html" frameborder="0" width="100%" height="800">
 </iframe>
 <div class="precio">
@@ -652,8 +677,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="madrid-secreta" class="section level3">
-<h3>Madrid secreta</h3>
+<div id="madrid-secreta" class="section level2">
+<h2>Madrid secreta</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/teleferico-y-estacion-de-4-caminos/index.html" frameborder="0" width="100%" height="800">
 </iframe>
 <div class="precio">
@@ -670,8 +695,8 @@ PRECIOS:
 </ul>
 <p><br> <br></p>
 </div>
-<div id="tour-en-biplaza" class="section level3">
-<h3>Tour en biplaza</h3>
+<div id="tour-en-biplaza" class="section level2">
+<h2>Tour en biplaza</h2>
 <p><img src = "gocar.jpg" width="100%"></p>
 <p>Tour de 3 horas comenzando y terminando en el Templo de Debod, los invitados conducen sus propios biplazas guiados por un GPS en el que está programada la ruta. El mismo GPS es el que dará las explicaciones sobre los lugares destacados tal y como El Palacio Real, la PlazaMayor, La Gran via, etc.</p>
 <div class="precio">
@@ -692,10 +717,10 @@ PRECIOS:
 <p><br> <br></p>
 </div>
 </div>
-<div id="excursión-día-completo" class="section level2">
-<h2><strong>Excursión día completo</strong></h2>
-<div id="toledo" class="section level3">
-<h3>Toledo</h3>
+<div id="excursión-día-completo" class="section level1">
+<h1>Excursión día completo</h1>
+<div id="toledo" class="section level2">
+<h2>Toledo</h2>
 <iframe src="https://uploads.knightlab.com/storymapjs/ee2f18a9c1765fc1a4086f419505950c/toledo-full-day-tour/index.html" frameborder="0" width="100%" height="800">
 </iframe>
 <div class="precio">
@@ -716,8 +741,8 @@ PRECIOS:
 <p><br> <br></p>
 </div>
 </div>
-<div id="condiciones" class="section level2">
-<h2><strong>Condiciones</strong></h2>
+<div id="condiciones" class="section level1">
+<h1>Condiciones</h1>
 <ul>
 <li><p>Precios netos para CuatroF</p></li>
 <li><p>Los honorarios de Cutting Edge Events está incluido en los precios</p></li>
@@ -725,13 +750,12 @@ PRECIOS:
 <li><p>No se ha realizado ninguna reserva. Una vez confirmado se comprobará la disponibilidad.</p></li>
 </ul>
 <p><br> <br></p>
-</div>
 <div id="sorprendan-a-sus-clientes" class="section level2">
-<h2><strong>Sorprendan a sus clientes!!</strong></h2>
+<h2>Sorprendan a sus clientes!!</h2>
 <div class="client_offer">
 
 <p>
-<p>¿Les ha gustado nuestra presentación? La meta principal de <em><strong>Cutting Edge Events</strong></em> es ayudarles a <strong>ganar</strong> este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br></p>
+<p>¿Les ha gustado nuestra presentación? La meta principal de <em><strong>CUTT/events</strong></em> es ayudarles a <strong>ganar</strong> este negocio. Seguramente ahora copiarían toda la información que contiene esta web y harían su propia presentación.<br></p>
 <p>
 Pero…¿porqué no utilizar nuestra tecnología y presentar esta propuesta a su cliente en nuestro formato? Ahora les ofrecemos, como un servicio <strong>totalmente gratuito</strong>, la posibilidad de poder sorprender a sus clientes con su novedosa propuesta.
 </p>
